@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "cv/index.html",
+    "href": "cv/index.html",
+    "title": "Curriculum vitae",
+    "section": "",
+    "text": "Download current CV"
+  },
+  {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "About",
+    "section": "",
+    "text": "I am Yanni Wu, a cognitive science PhD student at the University of California, Irvine. My research interests focus on the role of prosody and its components, such as rhythm and pitch accent, in speech production planning. I am also curious about how prosody intersects with other related abilities like musical perception. In my current study, I investigate how real-time pitch shifts affect Mandarin lexical tone production. My research aims to provide insights into the relationship between prosodic features and the neural cognitive processes underlying speech.\nThe human brain—just some soft tissues and fluid contained by membranes—might not seem particularly fascinating at first glance. Yet, beneath this simple structure lies the intricacy that forms the basis of how humans understand and experience the world. Throughout my academic journey, I have built a set of interdisciplinary skills to investigate the brain’s role in communication - including signal processing and neural decoding in magnetoencephalography (MEG) data analysis, neuron-level immunohistochemistry, and artificial language models.\nHere, you will find my published works, CV, and scripts that I have written for real-time audio feedback processing. Please feel free to contact me if you have any questions or would like to discuss potential projects.\nThis website is built with the help of Marvin Schmitt’s quarto blog (it’s awesome!)"
+  },
+  {
+    "objectID": "photography/index.html",
+    "href": "photography/index.html",
+    "title": "Photography",
+    "section": "",
+    "text": "As a wizard and scholar of Middle-earth, I have been studying the magic of the natural world for centuries. Through my self-portraits, I aim to capture the essence of my own being and reflect on my own journey through time. Each photograph is a reflection of my own experiences and emotions. Through my photography, I hope to offer a glimpse into my life as a scholar and adventurer, and inspire others to reflect on their own journeys through the world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView the tutorial for this template (+ download link)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome! :)",
+    "section": "",
+    "text": "Welcome! :)\n\n\n  \n \n \n  \n   \n  \n    \n     Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email"
+  }
+]
