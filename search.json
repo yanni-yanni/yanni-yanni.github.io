@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "cv/index.html",
+    "href": "cv/index.html",
+    "title": "Curriculum vitae",
+    "section": "",
+    "text": "Download current CV"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ya-Ning (Yanni) Wu",
+    "section": "",
+    "text": "Cognitive Sciences PhD (2027), UCI   Speech & Language Processing • Neural Decoding • Cognitive Neuroscience\n\n\n\n\n\n\n \n \n  \n   \n  \n    \n     Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email"
+  },
+  {
+    "objectID": "music/albums/cat.html",
+    "href": "music/albums/cat.html",
+    "title": "Cat!",
+    "section": "",
+    "text": "Cat\n\n\nYour browser does not support the audio element."
+  },
+  {
+    "objectID": "music/albums/stairs.html",
+    "href": "music/albums/stairs.html",
+    "title": "Dancing Stairs",
+    "section": "",
+    "text": "Stairs\n\n\nYour browser does not support the audio element."
+  },
+  {
+    "objectID": "music/albums/music1.html",
+    "href": "music/albums/music1.html",
+    "title": "Departure",
+    "section": "",
+    "text": "Train\n\n\nYour browser does not support the audio element."
+  },
+  {
+    "objectID": "music/albums/guide.html",
+    "href": "music/albums/guide.html",
+    "title": "Guide",
+    "section": "",
+    "text": "About the creator\nAll music in this library is written and produced by me using Logic Pro and GarageBand. \n\n\nHow to use this library?\nYou are free to download and use any of the music on this page for personal and non-commercial projects, as long as you credit me by including my name in the description or credits.\nFor commercial use, modifications, or custom compositions, please contact me through email at yaninw1 at uci.edu.\n\n\nCopyright & Restrictions\nYou may not claim my music as your own.  You may not resell, redistribute, or upload my music to other platforms as standalone tracks.  You may not use my music in projects that promote illegal activities. \nBy using this music, you agree to these terms. Thank you for supporting my work! :)\n\n\nHow to use the mp3 player?\nIn each page, you will see something like this:  Click the three dots to download or adjust playback speed.\n\n\nYour browser does not support the audio element."
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Research",
+    "section": "",
+    "text": "Altered Auditory Feedback\nKeywords: Real-time audio manipulation, Matlab, Audapter, Altered Auditory Feedback, Speech production, Lexical Tone\nThe Dual Speech Coordination model proposed that laryngeal and supralaryngeal control of speech production are coordinated by distinct cortical pathways (Hickok et al., 2023). Based on the model, we hypothesize that speakers recruited a dorsal-lateral system to coordinate pitch vocalization, while a more ventral system was activated to coordinate phonetic/syllabic articulation. However, whether higher-level areas of linguistic planning in the dorsal-lateral system are involved in pitch coordination when the context is linguistically contrastive, such as producing lexical tones, is an open question.\nPrevious research has explored the sensorimotor control of Mandarin tone production using behavioral Altered Auditory Feedback (AAF) tasks, where speech is recorded, manipulated, and sent back to participants in real time. However, these studies applied constant upward or downward shifts that alter only the pitch height but not the contour of the lexical tones (Tang, 2024). Therefore, the perturbed tone may sound less canonical but not necessarily from a different category. To address the question regarding neural mechanisms underlying pitch control at higher linguistic and lower acoustic levels, this study aim to conduct a variation of typical AAF task with fMRI design to investigate how cross-categorical pitch shifts affect Mandarin lexical tone production.\nPoster: pdf  Abstract: Exploring Cross-Categorical Pitch Shift Effects on Mandarin Tone Production  Script: Github link coming soon!\n\n\n\nRhythmic Coordinating Robots\nKeywords: e-puck2, python, rhythmic motor coordination, robotic. \nRhythmic synchronization is a dynamic process shaped by the interplay of predictive timing and sensory-motor interactions. Evidence from human studies, such as Spontaneous Motor Tempo (SMT), suggests that internal rhythmic models provide essential timing cues for synchronization tasks. However, these models also introduce variability influenced by environmental and contextual factors. Previous computational research indicates that internal rhythmic mechanisms can interfere with synchronization tasks, and their removal from models has been shown to enhance performance. This raises the question of whether internal rhythm serves a functional purpose—and if so, what that purpose might be.\nThis study aims to explore the functional role of internal tempo using robot embodiments that emulate human clapping behaviors. I hypothesize that despite paradoxically increasing uncertainty, internal rhythmic mechanisms are essential for sustaining time inferences and motor coordination. I expect that internal tempo enables robots to be more resilient in stimuli-changing conditions than those without, especially in multi-agent (more than 2 agents) scenarios that had not been tested systematically in past model simulation studies. Ultimately, the goal is to point towards the functional and cognitive mechanisms underlying human rhythmic coordination by exploring sensory-motor synchronization and its application to robotic systems.\n\n\n\nImproving signal clarity in neural decoding\nKeywords: magnetoencephalography (MEG); empirical mode decomposition (EMD); neural decoding; face perception \nNeural decoding is useful to explore the timing and source location in which the brain encodes information. Higher classification accuracy means that an analysis is more likely to succeed in extracting useful information from noises. In this paper, we present the application of a nonlinear, nonstationary signal decomposition technique—the empirical mode decomposition (EMD), on MEG data. We discuss the fundamental concepts and importance of nonlinear methods when it comes to analyzing brainwave signals and demonstrate the procedure on a set of open-source MEG facial recognition task dataset. The improved clarity of data allowed further decoding analysis to capture distinguishing features between conditions that were formerly over-looked in the existing literature, while raising interesting questions concerning hemispheric dominance to the encoding process of facial and identity information.\nPublication: Application of Empirical Mode Decomposition for Decoding Perception of Faces Using Magnetoencephalography  PDF version: click here \n\n\n\nSound-Symbolic Effect of Labels on Size Perception\nKeywords: Behavioral, perception, javascript. \nResearch suggests that sound symbolism plays a role in language change dynamics on many time scales, from developmental to evolutionary. We discuss two key issues in sound symbolism. First, what mechanism underlies its iconic mappings? A common assumption is that sound symbolism shares the mechanism with other cross-modal correspondences, but more empirical tests are required. Second, what makes a correspondence iconic? Iconicity typically presupposes some “natural” universal signifier-signified resemblance, but several sound-symbolic mappings are not found in some cultures. We advance the understanding of these questions by testing whether sound-symbolic effects are bidirectional, i.e. whether sound-symbolic properties of labels affect the memory of their referents. The results suggest that sound-symbolic effects are indeed bidirectional, which (i) shows similarity to other cross-modal correspondences, which are typically assumed to be bidirectional and (ii) suggests a way for how sound-symbolic associations become robust by amplifying initial biases through their bidirectional reinforcement.\nAbstract: click here  PDF version: download here\n\n\n\nOther Projects (drawer stuffs)\n\n\nUltrasound Image Categorization\nOriginally, this project aimed to determine whether Mandarin tones exhibit features detectable via laryngeal ultrasound, inspired by a study that successfully retrieved prosodic patterns. Outcome: The results were insignificant, but the scripts remain fully functional and adaptable for other purposes.\nScript link: coming soon!\n\n\nKaraoke-Style Word Flash in Matlab\nA simple function created for a personal project. This script displays a full sentence, with words turning red and disappearing one by one at a designated speed.\nScript link: coming soon!"
+  },
+  {
+    "objectID": "music/index.html",
+    "href": "music/index.html",
+    "title": "Music",
+    "section": "",
+    "text": "Important guideline on how to use the library\n\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nGuide\n\n\n\nuser_guide\n\n\nabout\n\n\nfree_music_library\n\n\ncopyright\n\n\n\nAbout the creator (me), and how to use this music library.\n\n\n\n\n\n\n\n\n\n\n\n\n\nGolden City\n\n\n\npiano\n\n\nwaltz\n\n\nnostalgic\n\n\nballad\n\n\n\nWaltzing with ghosts in the remnants. Broken chandeliers still whisper secrets, while faded music lingers in the dust.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDeparture\n\n\n\nwarm\n\n\nnostalgic\n\n\ndream\n\n\nballad\n\n\n\nAt a train platform, bidding farewell.\n\n\n\n\n\n\n\n\n\n\n\n\n\n0101\n\n\n\nexperimental\n\n\nshort\n\n\ndream\n\n\nfuturistic\n\n\n\nExperimenting techy-dreamy sounding instruments. A gift for someone.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDancing Stairs\n\n\n\nshort\n\n\nguitar\n\n\ndramatic\n\n\ninterlude\n\n\n\nTwo frenemies dancing all the way down the stairs.\n\n\n\n\n\n\n\n\n\n\n\n\n\nLeisure Afternoon\n\n\n\npiano\n\n\nrelaxing\n\n\nsoft\n\n\nballad\n\n\n\nThat gentle feeling when you wake up from a nap, in a leisure afternoon.\n\n\n\n\n\n\n\n\n\n\n\n\n\nCat!\n\n\n\nmetal\n\n\nrock\n\n\nshort\n\n\nfun\n\n\n\nA battle cat wreaking havoc in your room. All curtains and mugs have fallen.\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "music/albums/golden_city.html",
+    "href": "music/albums/golden_city.html",
+    "title": "Golden City",
+    "section": "",
+    "text": "City\n\n\nYour browser does not support the audio element."
+  },
+  {
+    "objectID": "music/albums/0101.html",
+    "href": "music/albums/0101.html",
+    "title": "0101",
+    "section": "",
+    "text": "winter\n\n\nYour browser does not support the audio element."
+  },
+  {
+    "objectID": "music/albums/daylight.html",
+    "href": "music/albums/daylight.html",
+    "title": "Leisure Afternoon",
+    "section": "",
+    "text": "Afternoon\nMusic box on the desk.  Wind blowing through curtain.  The aroma of fruit tea and leaves.  …From a beautiful dream that can’t be recalled. \n\n\nYour browser does not support the audio element."
+  },
+  {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "About",
+    "section": "",
+    "text": "Yanni is a cognitive science PhD student at the University of California, Irvine. Her research interests focus on the role of prosody and its components - such as rhythm and pitch accent - in speech production planning.\nThroughout her academic journey, she has built a set of interdisciplinary skills to investigate the brain’s role in communication - including signal processing, neural decoding, and artificial language models.  \n\nOn page “Research”:\nHere, you will find Yanni’s published works, CV, and scripts written for real-time audio feedback processing.  \n\n\nPage “Art” and “Music”:\nDisplay works from her hobbies: illustration and music composition. \nThe Music page features an  open-source library  of original compositions, available for free download and use.\nWhether you’re a content creator, game developer, or a fellow music enthusiast, feel free to explore and incorporate these tracks into your projects — check out the guide for more info!\nDoodles are created by hand drawing and digital illustration (ipad + IbisPaint).\nFeel free to contact Yanni if you have any questions."
+  },
+  {
+    "objectID": "updates/index.html",
+    "href": "updates/index.html",
+    "title": "Updates",
+    "section": "",
+    "text": "2025/03/26 Website launching date! :)"
+  }
+]
