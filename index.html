@@ -682,6 +682,55 @@ footer {
   .nav-social { display: none; }
 }
 
+/* ===== MOBILE NAV — scrollable tab strip ===== */
+@media (max-width: 600px) {
+  nav {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    gap: 0;
+  }
+  /* Top row: logo fills width */
+  .nav-logo {
+    height: 46px;
+    flex: 1 1 100%;
+    margin-right: 0;
+  }
+  /* Social icons sit top-right — pull into same row as logo */
+  .nav-social {
+    display: flex;
+    position: absolute;
+    right: 1rem;
+    top: 8px;
+  }
+  /* Tab strip: full-width, horizontally scrollable, no page overflow */
+  .nav-links {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    /* hide scrollbar across browsers */
+    scrollbar-width: none;        /* Firefox */
+    -ms-overflow-style: none;     /* IE/Edge */
+    border-top: 1px solid var(--border-px);
+    margin: 0 -1rem;              /* bleed to nav edges */
+    padding: 0 1rem;              /* restore inner padding */
+  }
+  .nav-links::-webkit-scrollbar { display: none; } /* Chrome/Safari */
+  .nav-links li { flex-shrink: 0; scroll-snap-align: start; }
+  .nav-links li a {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 0.75rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+  /* Pixel accent line stays visible */
+  nav::after { bottom: -4px; }
+}
+
 /* ===== ANIMATION ===== */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }
@@ -1282,7 +1331,7 @@ function px(name, style='') {
         <div class="project-header" onclick="toggleProject('robots')">
           <div class="project-header-left">
             <div style="display:flex;gap:0.5rem;margin-bottom:0.5rem;flex-wrap:wrap">
-              <span class="tag rose">Human-robot interaction</span>
+              <span class="tag rose">Computational modeling</span>
               <span class="tag">Active inference</span>
               <span class="tag sage">Embodied cognition</span>
             </div>
@@ -1671,7 +1720,7 @@ function px(name, style='') {
           </div>
           <div class="lang-card" style="--lc:var(--peach);--lb:#e0a870">
             <div class="lang-name">German</div>
-            <div class="lang-level">2 years UCI undergrad course</div>
+            <div class="lang-level">2 years UCI intermediate course</div>
             <div class="lang-bar-outer"><div class="lang-bar-inner" style="width:28%;background:#e0a870"></div></div>
           </div>
         </div>
