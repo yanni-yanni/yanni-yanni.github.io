@@ -1325,6 +1325,59 @@ function px(name, style='') {
         </div>
       </div>
 
+      <!-- BEATBOP HUNTER -->
+      <div class="project-card">
+        <div class="project-accent" style="background:linear-gradient(90deg,var(--sky-mid),var(--sage-mid))"></div>
+        <div class="project-header" onclick="toggleProject('beatbop')">
+          <div class="project-header-left">
+            <div style="display:flex;gap:0.5rem;margin-bottom:0.5rem;flex-wrap:wrap">
+              <span class="tag sky">Beat tracking</span>
+              <span class="tag">Real-time</span>
+              <span class="tag sage">Interactive demo</span>
+              <span class="tag">Open-source</span>
+            </div>
+            <h3>BeatBop Hunter: Online Beat Tracking in the Browser</h3>
+            <p style="font-size:0.87rem;color:var(--ink3);margin-top:0.25rem">Watch an algorithm find the beat in real time, hearing only up to the current moment</p>
+          </div>
+          <div class="project-header-right" id="beatbop-arrow">▾</div>
+        </div>
+        <div class="project-body" id="beatbop-body">
+          <div class="px-popup" style="--popup-border:#88b8e0;--popup-bar:var(--sky);--popup-shadow:rgba(136,184,224,0.35)">
+            <div class="px-popup-bar">
+              <div class="px-popup-title">&#9632; system message</div>
+              <div class="px-popup-btns">
+                <div class="px-popup-btn">_</div>
+                <div class="px-popup-btn">&#9633;</div>
+                <div class="px-popup-btn">&#x2715;</div>
+              </div>
+            </div>
+            <div class="px-popup-body">
+              <p><strong>The challenge:</strong> I want to make a beat extractor that can extract beat from complex sounds like songs and music online, in real time!</p>
+            </div>
+          </div>
+          <p>BeatBop Hunter is a browser-based interactive demo of <strong>online beat tracking</strong>. It listens to audio on the fly and estimates where each beat lands and how fast the music is going, using only what it has heard so far.</p>
+          <p>Every detected beat drops a dot and a click, while live counters show the instantaneous tempo (BPM), the tracker's current confidence, and the number of onsets detected. Built-in stimuli let you probe its limits, and you can drop in any audio file to hear it work on your own music.</p>
+          <div class="key-questions">
+            <h3 style="margin-bottom:0.75rem">What you can try</h3>
+            <div class="key-q"><span class="q-mark">?</span><span>Steady tempos (fixed 90 / 120 BPM).</span></div>
+            <div class="key-q"><span class="q-mark">?</span><span>Rhythms with changing tempo, missing beats or syncopated, off-beat accents.</span></div>
+            <div class="key-q"><span class="q-mark">?</span><span>User uploaded audio.</span></div>
+          </div>
+          <div style="margin:1.5rem 0">
+            <h3 style="margin-bottom:0.75rem">Why it's interesting</h3>
+            <p>Detection is strictly forward-looking, paralleling human beat extraction, as we also don't need to process the full music piece before we can detect any beat.</p>
+          </div>
+          <div class="demo-box">
+            <p style="margin-bottom:0.75rem"><strong>Try BeatBop Hunter</strong></p>
+            <p style="font-size:0.87rem;color:var(--ink3);margin-bottom:1rem">Runs entirely in the browser, no installation needed. Open <code>demo.html</code>, pick a stimulus or drop in your own track, and watch it hunt for the beat!</p>
+            <a class="btn btn-primary" href="https://github.com/yanni-yanni/beatbop-hunter" target="_blank">Open BeatBop Hunter ↗</a>
+          </div>
+          <div class="project-links">
+            <a class="btn btn-outline" href="https://github.com/yanni-yanni/beatbop-hunter" target="_blank"><span id="pl-gh3"></span> GitHub</a>
+          </div>
+        </div>
+      </div>
+
       <!-- ROBOT SYNC -->
       <div class="project-card">
         <div class="project-accent" style="background:linear-gradient(90deg,var(--rose-mid),var(--lavender-mid))"></div>
@@ -2114,7 +2167,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('nb-smpc').innerHTML = PX.star4;
 
   // Project link icons
-  ['pl-gh1','pl-gh2'].forEach(id => { const el=document.getElementById(id); if(el) el.innerHTML=PX.github.replace('24" height="24"','16" height="16"'); });
+  ['pl-gh1','pl-gh2','pl-gh3'].forEach(id => { const el=document.getElementById(id); if(el) el.innerHTML=PX.github.replace('24" height="24"','16" height="16"'); });
   ['pl-doc1','pl-doc2','pl-doc3','pl-doc4'].forEach(id => { const el=document.getElementById(id); if(el) el.innerHTML=PX.doc.replace('24" height="24"','16" height="16"'); });
 
   // Pubs eyebrow
