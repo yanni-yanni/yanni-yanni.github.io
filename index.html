@@ -1379,6 +1379,48 @@ function px(name, style='') {
         </div>
       </div>
 
+      <!-- PERCEPTION VS SYNC -->
+      <div class="project-card">
+        <div class="project-accent" style="background:linear-gradient(90deg,var(--butter),var(--peach))"></div>
+        <div class="project-header" onclick="toggleProject('percep')">
+          <div class="project-header-left">
+            <div style="display:flex;gap:0.5rem;margin-bottom:0.5rem;flex-wrap:wrap">
+              <span class="tag butter">Rhythm perception</span>
+              <span class="tag peach">Motor synchronization</span>
+              <span class="news-badge" style="background:var(--sky);color:var(--ink2)"><span id="nb-smpc"></span> SMPC 2026</span>
+            </div>
+            <h3>When Perception Outperforms Action: Dissociating Rhythm Perception from Motor Synchronization</h3>
+            <p style="font-size:0.87rem;color:var(--ink3);margin-top:0.25rem">Can you perceive a rhythm without being able to tap it?</p>
+          </div>
+          <div class="project-header-right" id="percep-arrow">▾</div>
+        </div>
+        <div class="project-body" id="percep-body">
+          <div class="px-popup" style="--popup-border:#88b8e0;--popup-bar:var(--sky);--popup-shadow:rgba(136,184,224,0.35)">
+            <div class="px-popup-bar">
+              <div class="px-popup-title">&#9632; system message</div>
+              <div class="px-popup-btns">
+                <div class="px-popup-btn">_</div>
+                <div class="px-popup-btn">&#9633;</div>
+                <div class="px-popup-btn">&#x2715;</div>
+              </div>
+            </div>
+            <div class="px-popup-body">
+              <p><strong>The question:</strong> Many theories assume rhythm perception depends on motor simulation, which means that to perceive rhythm, you must also be able to synchronize with it. But is that actually true?</p>
+            </div>
+          </div>
+          <p>Using polyrhythmic stimuli (3:5, 3:7, 5:7) in a within-subjects design, I compared how well participants could <em>detect timing irregularities</em> (perception) versus <em>tap simultaneously to both streams</em> (synchronization).</p>
+          <p>Nearly everyone achieved high perceptual sensitivity, but many of the same people <em>failed</em> to synchronize even under generous criteria. This demonstrates that, at the bottom line, perceptual rhythm representations can be more robust and accurate than what is directly measurable in motor execution.</p>
+          <div class="key-questions">
+            <h3 style="margin-bottom:0.75rem">Key questions</h3>
+            <div class="key-q"><span class="q-mark">?</span><span>Rethink: Is motor synchronization actually equivalent to or an adequate measurement for rhythm perception, or are these dissociable?</span></div>
+            <div class="key-q"><span class="q-mark">?</span><span>Does the perception-action gap reflect motor execution limits or higher-level processing differences?</span></div>
+          </div>
+          <div class="project-links">
+            <a class="btn btn-outline" href="https://yanni-yanni.github.io/research/pdf/smpc_poster10.pdf" target="_blank"><span id="pl-gh2"></span> Poster</a>
+          </div>
+        </div>
+      </div>
+
       <!-- ROBOT SYNC -->
       <div class="project-card">
         <div class="project-accent" style="background:linear-gradient(90deg,var(--rose-mid),var(--lavender-mid))"></div>
@@ -1507,48 +1549,6 @@ function px(name, style='') {
         </div>
       </div>
 
-      <!-- PERCEPTION VS SYNC -->
-      <div class="project-card">
-        <div class="project-accent" style="background:linear-gradient(90deg,var(--butter),var(--peach))"></div>
-        <div class="project-header" onclick="toggleProject('percep')">
-          <div class="project-header-left">
-            <div style="display:flex;gap:0.5rem;margin-bottom:0.5rem;flex-wrap:wrap">
-              <span class="tag butter">Rhythm perception</span>
-              <span class="tag peach">Motor synchronization</span>
-              <span class="news-badge" style="background:var(--sky);color:var(--ink2)"><span id="nb-smpc"></span> SMPC 2026</span>
-            </div>
-            <h3>When Perception Outperforms Action: Dissociating Rhythm Perception from Motor Synchronization</h3>
-            <p style="font-size:0.87rem;color:var(--ink3);margin-top:0.25rem">Can you perceive a rhythm without being able to tap it?</p>
-          </div>
-          <div class="project-header-right" id="percep-arrow">▾</div>
-        </div>
-        <div class="project-body" id="percep-body">
-          <div class="px-popup" style="--popup-border:#88b8e0;--popup-bar:var(--sky);--popup-shadow:rgba(136,184,224,0.35)">
-            <div class="px-popup-bar">
-              <div class="px-popup-title">&#9632; system message</div>
-              <div class="px-popup-btns">
-                <div class="px-popup-btn">_</div>
-                <div class="px-popup-btn">&#9633;</div>
-                <div class="px-popup-btn">&#x2715;</div>
-              </div>
-            </div>
-            <div class="px-popup-body">
-              <p><strong>The question:</strong> Many theories assume rhythm perception depends on motor simulation, which means that to perceive rhythm, you must also be able to synchronize with it. But is that actually true?</p>
-            </div>
-          </div>
-          <p>Using polyrhythmic stimuli (3:5, 3:7, 5:7) in a within-subjects design, I compared how well participants could <em>detect timing irregularities</em> (perception) versus <em>tap simultaneously to both streams</em> (synchronization).</p>
-          <p>Nearly everyone achieved high perceptual sensitivity, but many of the same people <em>failed</em> to synchronize even under generous criteria. This demonstrates that, at the bottom line, perceptual rhythm representations can be more robust and accurate than what is directly measurable in motor execution.</p>
-          <div class="key-questions">
-            <h3 style="margin-bottom:0.75rem">Key questions</h3>
-            <div class="key-q"><span class="q-mark">?</span><span>Rethink: Is motor synchronization actually equivalent to or an adequate measurement for rhythm perception, or are these dissociable?</span></div>
-            <div class="key-q"><span class="q-mark">?</span><span>Does the perception-action gap reflect motor execution limits or higher-level processing differences?</span></div>
-          </div>
-          <div class="project-links">
-            <a class="btn btn-outline" href="#" onclick="showPage('talks')"><span id="pl-doc4"></span> SMPC 2026 Talk</a>
-          </div>
-        </div>
-      </div>
-
       <!-- OLDER PROJECTS -->
       <div class="project-card">
         <div class="project-accent" style="background:linear-gradient(90deg,var(--sky-mid),var(--sage-mid))"></div>
@@ -1621,6 +1621,9 @@ function px(name, style='') {
       <div class="pub-venue">SMPC 2026 · Society for Music Perception and Cognition</div>
       <div class="pub-title">When Perception Outperforms Action: Dissociating Rhythm Perception from Motor Synchronization</div>
       <div class="pub-authors">Wu, Y.</div>
+      <div class="pub-links">
+        <a class="btn btn-outline" style="font-size:0.79rem;padding:3px 10px" href="https://yanni-yanni.github.io/research/pdf/smpc_poster10.pdf" target="_blank">PDF</a>
+      </div>
     </div>
     <div class="pub-item">
       <div class="pub-venue">SNL 2025 · Society for the Neurobiology of Language</div>
@@ -1663,6 +1666,7 @@ function px(name, style='') {
         <div class="talk-title">When Perception Outperforms Action: Dissociating Rhythm Perception from Motor Synchronization</div>
         <div class="talk-meta">Society for Music Perception and Cognition</div>
         <span class="talk-type" style="background:var(--sky);color:var(--ink2)" id="tt-talk1"></span>
+        <div style="margin-top:0.75rem"><a class="btn btn-outline" style="font-size:0.79rem;padding:3px 10px" href="https://yanni-yanni.github.io/research/pdf/smpc_poster10.pdf" target="_blank">Poster PDF</a></div>
       </div>
       <div class="talk-card">
         <div class="talk-top"><span class="talk-conf">SAB 2026</span><span class="talk-year">2026</span></div>
