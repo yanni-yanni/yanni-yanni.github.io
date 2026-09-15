@@ -1321,24 +1321,23 @@ function px(name, style='') {
         </div>
       </div>
 
-      <!-- BEATBOP HUNTER -->
+      <!-- ENGLISH STRESS -->
       <div class="project-card">
-        <div class="project-accent" style="background:linear-gradient(90deg,var(--sky-mid),var(--sage-mid))"></div>
-        <div class="project-header" onclick="toggleProject('beatbop')">
+        <div class="project-accent" style="background:linear-gradient(90deg,var(--sage-mid),var(--sky-mid))"></div>
+        <div class="project-header" onclick="toggleProject('stress')">
           <div class="project-header-left">
             <div style="display:flex;gap:0.5rem;margin-bottom:0.5rem;flex-wrap:wrap">
-              <span class="tag sky">Beat tracking</span>
-              <span class="tag">Real-time</span>
-              <span class="tag sage">Interactive demo</span>
-              <span class="tag">Open-source</span>
+              <span class="tag sage">Speech prosody</span>
+              <span class="tag sky">L2 production</span>
+              <span class="tag butter">Acoustic analysis</span>
             </div>
-            <h3>BeatBop Hunter: Online Beat Tracking in the Browser</h3>
-            <p style="font-size:0.87rem;color:var(--ink3);margin-top:0.25rem">Watch an algorithm find the beat in real time, hearing only up to the current moment</p>
+            <h3>The Role of Syllable Position in English Lexical Stress</h3>
+            <p style="font-size:0.87rem;color:var(--ink3);margin-top:0.25rem">Do nonnative English speakers produce stress differently? Why?</p>
           </div>
-          <div class="project-header-right" id="beatbop-arrow">▾</div>
+          <div class="project-header-right" id="stress-arrow">▾</div>
         </div>
-        <div class="project-body" id="beatbop-body">
-          <div class="px-popup" style="--popup-border:#88b8e0;--popup-bar:var(--sky);--popup-shadow:rgba(136,184,224,0.35)">
+        <div class="project-body" id="stress-body">
+          <div class="px-popup" style="--popup-border:#90c8a8;--popup-bar:var(--sage);--popup-shadow:rgba(144,200,168,0.35)">
             <div class="px-popup-bar">
               <div class="px-popup-title">&#9632; system message</div>
               <div class="px-popup-btns">
@@ -1348,28 +1347,20 @@ function px(name, style='') {
               </div>
             </div>
             <div class="px-popup-body">
-              <p><strong>The challenge:</strong> I want a GUI/easy to use beat extractor that can extract beat from complex sounds like songs and music online, in real time!</p>
+              <p><strong>The question:</strong> English stress is marked mainly by making unstressed syllables <em>shorter</em>. But does it matter whether that syllable comes first or last in the word? And do Mandarin learners of English use the same strategies as native speakers?</p>
             </div>
           </div>
-          <p>BeatBop Hunter is a browser-based interactive demo of <strong>online beat tracking</strong>. It listens to audio on the fly and estimates where each beat lands and how fast the music is going, using only what it has heard so far.</p>
-          <p>Every detected beat drops a dot and a click, while live counters show the instantaneous tempo (BPM), the tracker's current confidence, and the number of onsets detected. Built-in stimuli let you probe its limits, and you can drop in any audio file to hear it work on your own music.</p>
+          <p>English has pairs of words where stress alone distinguishes nouns from verbs: <strong>RE</strong>cord (noun) vs. re<strong>CORD</strong> (verb). Native speakers mark stress with a distinctive pattern of duration, pitch, and intensity. Importantly, the pattern isn't identical across word positions.</p>
+          <p>In a study that samples native American English speakers and L1-Mandarin English learners, we found a positional asymmetry in how speakers use different cues, and that unstressed syllables are reduced more aggressively in initial position than in final position.</p>
+          <p>This work is collected, analyzed, and is currently under manuscript writing process.</p>
           <div class="key-questions">
-            <h3 style="margin-bottom:0.75rem">What you can try</h3>
-            <div class="key-q"><span class="q-mark">?</span><span>Steady tempos (fixed 90 / 120 BPM).</span></div>
-            <div class="key-q"><span class="q-mark">?</span><span>Rhythms with changing tempo, missing beats or syncopated, off-beat accents.</span></div>
-            <div class="key-q"><span class="q-mark">?</span><span>User uploaded audio.</span></div>
-          </div>
-          <div style="margin:1.5rem 0">
-            <h3 style="margin-bottom:0.75rem">Why it's interesting</h3>
-            <p>Detection is strictly forward-looking, paralleling human beat extraction, as we also don't need to process the full music piece before we can detect any beat.</p>
-          </div>
-          <div class="demo-box">
-            <p style="margin-bottom:0.75rem"><strong>Try BeatBop Hunter</strong></p>
-            <p style="font-size:0.87rem;color:var(--ink3);margin-bottom:1rem">Runs entirely in the browser, no installation needed. Open <code>demo.html</code>, pick a stimulus or drop in your own track, and watch it hunt for the beat!</p>
-            <a class="btn btn-primary" href="https://github.com/yanni-yanni/beatbop-hunter" target="_blank">Open BeatBop Hunter ↗</a>
+            <h3 style="margin-bottom:0.75rem">Key questions</h3>
+            <div class="key-q"><span class="q-mark">?</span><span>Do native English speakers show position-specific strategies for stress marking?</span></div>
+            <div class="key-q"><span class="q-mark">?</span><span>Do L1 Mandarin speakers transfer their pitch-control strategies into English stress production?</span></div>
+            <div class="key-q"><span class="q-mark">?</span><span>What does this tell us about how experience shapes the phonological system in speech?</span></div>
           </div>
           <div class="project-links">
-            <a class="btn btn-outline" href="https://github.com/yanni-yanni/beatbop-hunter" target="_blank"><span id="pl-gh3"></span> GitHub</a>
+            <a class="btn btn-outline" href="#" onclick="showPage('pubs')"><span id="pl-doc2"></span> Abstract</a>
           </div>
         </div>
       </div>
@@ -1458,50 +1449,6 @@ function px(name, style='') {
         </div>
       </div>
 
-      <!-- ENGLISH STRESS -->
-      <div class="project-card">
-        <div class="project-accent" style="background:linear-gradient(90deg,var(--sage-mid),var(--sky-mid))"></div>
-        <div class="project-header" onclick="toggleProject('stress')">
-          <div class="project-header-left">
-            <div style="display:flex;gap:0.5rem;margin-bottom:0.5rem;flex-wrap:wrap">
-              <span class="tag sage">Speech prosody</span>
-              <span class="tag sky">L2 production</span>
-              <span class="tag butter">Acoustic analysis</span>
-            </div>
-            <h3>The Role of Syllable Position in English Lexical Stress</h3>
-            <p style="font-size:0.87rem;color:var(--ink3);margin-top:0.25rem">Do nonnative English speakers produce stress differently? Why?</p>
-          </div>
-          <div class="project-header-right" id="stress-arrow">▾</div>
-        </div>
-        <div class="project-body" id="stress-body">
-          <div class="px-popup" style="--popup-border:#90c8a8;--popup-bar:var(--sage);--popup-shadow:rgba(144,200,168,0.35)">
-            <div class="px-popup-bar">
-              <div class="px-popup-title">&#9632; system message</div>
-              <div class="px-popup-btns">
-                <div class="px-popup-btn">_</div>
-                <div class="px-popup-btn">&#9633;</div>
-                <div class="px-popup-btn">&#x2715;</div>
-              </div>
-            </div>
-            <div class="px-popup-body">
-              <p><strong>The question:</strong> English stress is marked mainly by making unstressed syllables <em>shorter</em>. But does it matter whether that syllable comes first or last in the word? And do Mandarin learners of English use the same strategies as native speakers?</p>
-            </div>
-          </div>
-          <p>English has pairs of words where stress alone distinguishes nouns from verbs: <strong>RE</strong>cord (noun) vs. re<strong>CORD</strong> (verb). Native speakers mark stress with a distinctive pattern of duration, pitch, and intensity. Importantly, the pattern isn't identical across word positions.</p>
-          <p>In a study that samples native American English speakers and L1-Mandarin English learners, we found a positional asymmetry in how speakers use different cues, and that unstressed syllables are reduced more aggressively in initial position than in final position.</p>
-          <p>This work is collected, analyzed, and is currently under manuscript writing process.</p>
-          <div class="key-questions">
-            <h3 style="margin-bottom:0.75rem">Key questions</h3>
-            <div class="key-q"><span class="q-mark">?</span><span>Do native English speakers show position-specific strategies for stress marking?</span></div>
-            <div class="key-q"><span class="q-mark">?</span><span>Do L1 Mandarin speakers transfer their pitch-control strategies into English stress production?</span></div>
-            <div class="key-q"><span class="q-mark">?</span><span>What does this tell us about how experience shapes the phonological system in speech?</span></div>
-          </div>
-          <div class="project-links">
-            <a class="btn btn-outline" href="#" onclick="showPage('pubs')"><span id="pl-doc2"></span> Abstract</a>
-          </div>
-        </div>
-      </div>
-
       <!-- DAF -->
       <div class="project-card">
         <div class="project-accent" style="background:linear-gradient(90deg,var(--peach),var(--rose-mid))"></div>
@@ -1540,6 +1487,59 @@ function px(name, style='') {
           </div>
           <div class="project-links">
             <a class="btn btn-outline" href="#" onclick="showPage('talks')"><span id="pl-doc3"></span> SNL 2025 Poster</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BEATBOP HUNTER -->
+      <div class="project-card">
+        <div class="project-accent" style="background:linear-gradient(90deg,var(--sky-mid),var(--sage-mid))"></div>
+        <div class="project-header" onclick="toggleProject('beatbop')">
+          <div class="project-header-left">
+            <div style="display:flex;gap:0.5rem;margin-bottom:0.5rem;flex-wrap:wrap">
+              <span class="tag sky">Beat tracking</span>
+              <span class="tag">Real-time</span>
+              <span class="tag sage">Interactive demo</span>
+              <span class="tag">Open-source</span>
+            </div>
+            <h3>BeatBop Hunter: Online Beat Tracking in the Browser</h3>
+            <p style="font-size:0.87rem;color:var(--ink3);margin-top:0.25rem">Watch an algorithm find the beat in real time, hearing only up to the current moment</p>
+          </div>
+          <div class="project-header-right" id="beatbop-arrow">▾</div>
+        </div>
+        <div class="project-body" id="beatbop-body">
+          <div class="px-popup" style="--popup-border:#88b8e0;--popup-bar:var(--sky);--popup-shadow:rgba(136,184,224,0.35)">
+            <div class="px-popup-bar">
+              <div class="px-popup-title">&#9632; system message</div>
+              <div class="px-popup-btns">
+                <div class="px-popup-btn">_</div>
+                <div class="px-popup-btn">&#9633;</div>
+                <div class="px-popup-btn">&#x2715;</div>
+              </div>
+            </div>
+            <div class="px-popup-body">
+              <p><strong>The challenge:</strong> I want a GUI/easy to use beat extractor that can extract beat from complex sounds like songs and music online, in real time!</p>
+            </div>
+          </div>
+          <p>BeatBop Hunter is a browser-based interactive demo of <strong>online beat tracking</strong>. It listens to audio on the fly and estimates where each beat lands and how fast the music is going, using only what it has heard so far.</p>
+          <p>Every detected beat drops a dot and a click, while live counters show the instantaneous tempo (BPM), the tracker's current confidence, and the number of onsets detected. Built-in stimuli let you probe its limits, and you can drop in any audio file to hear it work on your own music.</p>
+          <div class="key-questions">
+            <h3 style="margin-bottom:0.75rem">What you can try</h3>
+            <div class="key-q"><span class="q-mark">?</span><span>Steady tempos (fixed 90 / 120 BPM).</span></div>
+            <div class="key-q"><span class="q-mark">?</span><span>Rhythms with changing tempo, missing beats or syncopated, off-beat accents.</span></div>
+            <div class="key-q"><span class="q-mark">?</span><span>User uploaded audio.</span></div>
+          </div>
+          <div style="margin:1.5rem 0">
+            <h3 style="margin-bottom:0.75rem">Why it's interesting</h3>
+            <p>Detection is strictly forward-looking, paralleling human beat extraction, as we also don't need to process the full music piece before we can detect any beat.</p>
+          </div>
+          <div class="demo-box">
+            <p style="margin-bottom:0.75rem"><strong>Try BeatBop Hunter</strong></p>
+            <p style="font-size:0.87rem;color:var(--ink3);margin-bottom:1rem">Runs entirely in the browser, no installation needed. Open <code>demo.html</code>, pick a stimulus or drop in your own track, and watch it hunt for the beat!</p>
+            <a class="btn btn-primary" href="https://github.com/yanni-yanni/beatbop-hunter" target="_blank">Open BeatBop Hunter ↗</a>
+          </div>
+          <div class="project-links">
+            <a class="btn btn-outline" href="https://github.com/yanni-yanni/beatbop-hunter" target="_blank"><span id="pl-gh3"></span> GitHub</a>
           </div>
         </div>
       </div>
