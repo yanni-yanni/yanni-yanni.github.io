@@ -306,6 +306,14 @@ a:hover { text-decoration: underline; }
   display: inline-flex; align-items: center; gap: 3px;
   padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 600; margin-right: 6px;
 }
+/* Scrollable news list — JS sets max-height to fit the 5 most recent items */
+.news-scroll {
+  overflow-y: auto; padding-right: 0.5rem;
+  scrollbar-width: thin; scrollbar-color: var(--lavender-mid) transparent;
+}
+.news-scroll::-webkit-scrollbar { width: 6px; }
+.news-scroll::-webkit-scrollbar-thumb { background: var(--lavender-mid); opacity: 0.6; }
+.news-scroll::-webkit-scrollbar-track { background: transparent; }
 
 /* ===== ABOUT ===== */
 .about-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: start; }
@@ -1163,7 +1171,7 @@ function px(name, style='') {
 
     <div class="divider"></div>
     <span class="eyebrow" id="updates-eyebrow"></span>
-    <div style="margin-top:1rem" id="news-list"></div>
+    <div style="margin-top:1rem" id="news-list" class="news-scroll"></div>
   </div>
 
   <footer id="footer-home"></footer>
@@ -1330,6 +1338,7 @@ function px(name, style='') {
               <span class="tag sage">Speech prosody</span>
               <span class="tag sky">L2 production</span>
               <span class="tag butter">Acoustic analysis</span>
+              <span class="news-badge" style="background:var(--butter);color:var(--ink2)"><span id="nb-camp"></span> CAMP 2026</span>
             </div>
             <h3>The Role of Syllable Position in English Lexical Stress</h3>
             <p style="font-size:0.87rem;color:var(--ink3);margin-top:0.25rem">Do nonnative English speakers produce stress differently? Why?</p>
@@ -1361,6 +1370,7 @@ function px(name, style='') {
           </div>
           <div class="project-links">
             <a class="btn btn-outline" href="#" onclick="showPage('pubs')"><span id="pl-doc2"></span> Abstract</a>
+            <a class="btn btn-outline" href="https://yanni-yanni.github.io/research/pdf/camp_poster.pdf" target="_blank"><span id="pl-doc4"></span> CAMP 2026 Poster</a>
           </div>
         </div>
       </div>
@@ -1597,7 +1607,11 @@ function px(name, style='') {
       <div class="pub-venue">SAB 2026 · Simulation of Adaptive Behavior</div>
       <div class="pub-title">SYNCOFLY: An Interactive Platform for Collective Rhythm Synchronization</div>
       <div class="pub-authors">Wu, Y., Hickok, G., &amp; Krichmar, J. L.</div>
-      <div class="pub-links"><a class="btn btn-outline" style="font-size:0.79rem;padding:3px 10px" href="https://github.com/yanni-yanni/syncofly" target="_blank">GitHub ↗</a></div>
+      <div class="pub-links">
+        <a class="btn btn-outline" style="font-size:0.79rem;padding:3px 10px" href="https://doi.org/10.1007/978-3-032-39953-3_10" target="_blank">Read paper ↗</a>
+        <a class="btn btn-outline" style="font-size:0.79rem;padding:3px 10px" href="https://yanni-yanni.github.io/research/pdf/syncofly_paper.pdf" target="_blank">PDF</a>
+        <a class="btn btn-outline" style="font-size:0.79rem;padding:3px 10px" href="https://github.com/yanni-yanni/syncofly" target="_blank">GitHub ↗</a>
+      </div>
     </div>
     <div class="divider"></div>
     <span class="eyebrow">Journal articles</span>
@@ -1612,6 +1626,24 @@ function px(name, style='') {
     </div>
     <div class="divider"></div>
     <span class="eyebrow">Conference abstracts</span>
+    <div class="pub-item">
+      <div class="pub-venue">NeuroMusic 2026 · NeuroMusic Conference</div>
+      <div class="pub-title">Competing Objectives Can Drive the (De)synchronized Cycles of Rhythmic Clapping</div>
+      <div class="pub-authors">Wu, Y.</div>
+      <div class="pub-links">
+        <a class="btn btn-outline" style="font-size:0.79rem;padding:3px 10px" href="https://yanni-yanni.github.io/research/pdf/neuromusic_abstract.pdf" target="_blank">Abstract</a>
+        <a class="btn btn-outline" style="font-size:0.79rem;padding:3px 10px" href="https://yanni-yanni.github.io/research/pdf/applause_poster.pdf" target="_blank">Poster PDF</a>
+      </div>
+    </div>
+    <div class="pub-item">
+      <div class="pub-venue">CAMP 2026 · California Meeting on Psycholinguistics</div>
+      <div class="pub-title">Front-Loading Lexical Stress: Positional Asymmetries in American English and Mandarin-English Speech</div>
+      <div class="pub-authors">Wu, Y. ; Xie, X. ; Kurumada, C.</div>
+      <div class="pub-links">
+        <a class="btn btn-outline" style="font-size:0.79rem;padding:3px 10px" href="https://camp9ucsb.github.io/conference/" target="_blank">Conference ↗</a>
+        <a class="btn btn-outline" style="font-size:0.79rem;padding:3px 10px" href="https://yanni-yanni.github.io/research/pdf/camp_poster.pdf" target="_blank">Poster PDF</a>
+      </div>
+    </div>
     <div class="pub-item">
       <div class="pub-venue">SMPC 2026 · Society for Music Perception and Cognition</div>
       <div class="pub-title">When Perception Outperforms Action: Dissociating Rhythm Perception from Motor Synchronization</div>
@@ -1656,6 +1688,20 @@ function px(name, style='') {
     <p class="lead" style="margin-top:1rem">Conference presentations, posters, and talks.</p>
     <div class="divider"></div>
     <div class="talk-grid">
+      <div class="talk-card">
+        <div class="talk-top"><span class="talk-conf">NeuroMusic 2026</span><span class="talk-year">2026</span></div>
+        <div class="talk-title">Competing Objectives Can Drive the (De)synchronized Cycles of Rhythmic Clapping</div>
+        <div class="talk-meta" style="margin-bottom:0.75rem">NeuroMusic Conference</div>
+        <span class="talk-type" style="background:var(--rose);color:var(--ink2)" id="tt-talk2"></span>
+        <div style="margin-top:0.75rem"><a class="btn btn-outline" style="font-size:0.79rem;padding:3px 10px" href="https://yanni-yanni.github.io/research/pdf/applause_poster.pdf" target="_blank">Poster PDF</a></div>
+      </div>
+      <div class="talk-card">
+        <div class="talk-top"><span class="talk-conf">CAMP 2026</span><span class="talk-year">2026</span></div>
+        <div class="talk-title">Front-Loading Lexical Stress: Positional Asymmetries in American English and Mandarin-English Speech</div>
+        <div class="talk-meta" style="margin-bottom:0.75rem">California Meeting on Psycholinguistics</div>
+        <span class="talk-type" style="background:var(--butter);color:var(--ink2)" id="tt-poster3"></span>
+        <div style="margin-top:0.75rem"><a class="btn btn-outline" style="font-size:0.79rem;padding:3px 10px" href="https://yanni-yanni.github.io/research/pdf/camp_poster.pdf" target="_blank">Poster PDF</a></div>
+      </div>
       <div class="talk-card">
         <div class="talk-top"><span class="talk-conf">SMPC 2026</span><span class="talk-year">2026</span></div>
         <div class="talk-title">When Perception Outperforms Action: Dissociating Rhythm Perception from Motor Synchronization</div>
@@ -2099,6 +2145,18 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('updates-eyebrow').innerHTML = PX.star4 + ' recent updates';
   document.getElementById('news-list').innerHTML = `
     <div class="news-item">
+      <div class="news-date">Nov 2026</div>
+      <div class="news-text"><span class="news-badge" style="background:var(--rose);color:var(--ink2)">${PX.flower} Talk &amp; Poster</span>Presenting at <strong>NeuroMusic 2026</strong> on how competing objectives drive cycles of synchronized and desynchronized applause.</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">Nov 2026</div>
+      <div class="news-text"><span class="news-badge" style="background:var(--lavender);color:var(--ink2)">${PX.star4} Paper</span><strong>SYNCOFLY</strong> paper is out in the <em>SAB 2026</em> proceedings!</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">Nov 2026</div>
+      <div class="news-text"><span class="news-badge" style="background:var(--butter);color:var(--ink2)">${PX.star4} Poster</span>Poster at <strong>CAMP 2026</strong> on positional asymmetries in English lexical stress.</div>
+    </div>
+    <div class="news-item">
       <div class="news-date">Jun 2026</div>
       <div class="news-text"><span class="news-badge" style="background:var(--lavender);color:var(--ink2)">${PX.star4} Paper</span><strong>SYNCOFLY</strong> accepted at <em>SAB 2026</em>! Presenting a browser-based platform for studying collective rhythmic synchronization.</div>
     </div>
@@ -2114,6 +2172,21 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="news-date">Mar 2025</div>
       <div class="news-text"><span class="news-badge" style="background:var(--peach);color:var(--ink2)">${PX.flower} Launch</span>Website launched! Hello world ${PX.bunny}</div>
     </div>`;
+
+  // Limit visible news to the 5 most recent items; the rest scroll
+  const NEWS_VISIBLE = 5;
+  const newsList = document.getElementById('news-list');
+  function sizeNewsList() {
+    const items = newsList.querySelectorAll('.news-item');
+    if (items.length <= NEWS_VISIBLE) { newsList.style.maxHeight = ''; return; }
+    const last = items[NEWS_VISIBLE - 1];
+    if (!last.offsetHeight) return; // home page hidden; recalculated when shown
+    newsList.style.maxHeight = (last.offsetTop - newsList.offsetTop + last.offsetHeight) + 'px';
+  }
+  sizeNewsList();
+  if (window.ResizeObserver) new ResizeObserver(sizeNewsList).observe(newsList);
+  window.addEventListener('resize', sizeNewsList);
+  if (document.fonts) document.fonts.ready.then(sizeNewsList);
 
   // Footer
   const footerHTML = `${PX.star4} © 2025 Ya-Ning (Yanni) Wu · UCI Cognitive Sciences ${PX.star4}`;
@@ -2162,6 +2235,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('nb-sab').innerHTML  = PX.star4;
   document.getElementById('nb-snl').innerHTML  = PX.star4;
   document.getElementById('nb-smpc').innerHTML = PX.star4;
+  document.getElementById('nb-camp').innerHTML = PX.star4;
 
   // Project link icons
   ['pl-gh1','pl-gh2','pl-gh3'].forEach(id => { const el=document.getElementById(id); if(el) el.innerHTML=PX.github.replace('24" height="24"','16" height="16"'); });
@@ -2176,6 +2250,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('tt-paper1').innerHTML = PX.star4 + ' Paper';
   document.getElementById('tt-poster1').innerHTML= PX.flower + ' Poster';
   document.getElementById('tt-poster2').innerHTML= PX.flower + ' Poster';
+  document.getElementById('tt-talk2').innerHTML  = PX.mic.replace('32" height="32"','16" height="16"') + ' Talk &amp; Poster';
+  document.getElementById('tt-poster3').innerHTML= PX.flower + ' Poster';
 
   // Skills eyebrow + group icons
   document.getElementById('skills-eyebrow').innerHTML = PX.sparkle + ' skills &amp; tools';
